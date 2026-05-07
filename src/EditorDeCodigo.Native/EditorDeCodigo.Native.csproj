@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Target Name="BuildNativeLib" BeforeTargets="BeforeBuild"
+        Inputs="../../native/src/**/*"
+        Outputs="../../native/libeditor_syntax.so">
+    <Exec Command="make" WorkingDirectory="../../native" />
+  </Target>
+
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="../../native/libeditor_syntax.so" Link="libeditor_syntax.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

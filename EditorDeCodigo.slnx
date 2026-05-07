@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EditorDeCodigo.UI/EditorDeCodigo.UI.csproj" />
+    <Project Path="src/EditorDeCodigo.Core/EditorDeCodigo.Core.csproj" />
+    <Project Path="src/EditorDeCodigo.Lsp/EditorDeCodigo.Lsp.csproj" />
+    <Project Path="src/EditorDeCodigo.Native/EditorDeCodigo.Native.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EditorDeCodigo.Core.Tests/EditorDeCodigo.Core.Tests.csproj" />
+  </Folder>
+</Solution>
